@@ -9,5 +9,6 @@ st.dataframe(penguin_df)
 
 
 uploaded_file = st.file_uploader("Choose a file")
-uploaded_file_df = pd.read_csv(uploaded_file)
-st.dataframe(uploaded_file_df)
+if uploaded_file is not None:
+  uploaded_file_df = pd.read_csv(uploaded_file)
+  st.dataframe(uploaded_file_df)
