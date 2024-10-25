@@ -13,7 +13,7 @@ chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.line_chart(chart_data)
 
 
-uploaded_file = st.file_uploader("Choose a file")
-if uploaded_file is not None:
-  uploaded_file_df = pd.read_csv(uploaded_file)
-  st.dataframe(uploaded_file_df)
+# uploaded_file = st.file_uploader("Choose a file")
+# if uploaded_file is not None:
+#   uploaded_file_df = pd.read_csv(uploaded_file)
+#   st.dataframe(uploaded_file_df)
